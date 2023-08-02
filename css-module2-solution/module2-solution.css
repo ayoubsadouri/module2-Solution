@@ -1,0 +1,86 @@
+  
+  .box {
+    height: 300px;
+    background-color: #ccc;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    position: relative;
+  }
+    .container div p{
+    width: 90%;
+    position: absolute;
+    top: 15%;
+    line-height: 1.4;
+    padding: 7px 27px;
+    font-size: 20px;
+    font-family: tahoma;
+    }
+  .container h2{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-family: tahoma;
+    position: relative;
+    text-align: center;
+  }
+  .container div h3{
+    width: 115px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 29px;
+    font-family: tahoma;
+    text-transform: capitalize;
+    border: 1px solid #333;
+  }
+  .container div.box1 h3{
+    background: aqua;
+  }
+  .container div.box2 h3{
+    background: orange;
+  }
+  .container div.box3 h3{
+    background: purple;
+    color: #FFF;
+  }
+  @media screen and (max-width: 767px) {
+    .box {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .container div p{
+        top: 27%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .box {
+        width: 47.2%;
+        margin: 10px;
+        float: left;
+    }
+    div.box2{
+        width: 97%;
+    }
+    .container div.box2 p{
+      top: 30%;
+    }
+    .container div p{
+      margin: 28px 0;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    .box {
+        width: 32.2%;
+        float: left;
+        margin: 5px;
+    }
+    .container div p{
+    top: 12%;
+    padding: 32px 24px;
+    margin: 7px 0px;
+    }
+  }
